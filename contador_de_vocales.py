@@ -40,6 +40,15 @@ class TestContarVocales(unittest.TestCase):
     def test_contar_mUrciElago(self):
         resultado = contar_vocales('mUrciElago')
         self.assertEqual(resultado, {'a': 1, 'e': 1, 'i': 1, 'o': 1, 'u': 1})
+    
+    def test_contar_casanova(self):
+        resultado = contar_vocales('CelUlar')
+        self.assertEqual(resultado, {'a': 1, 'e': 1, 'u':1})
 
 
+    def test_contar_casanova(self):
+        resultado = contar_vocales('Restaurar')
+        self.assertEqual(resultado, {'a': 2, 'e': 1, 'u':1})
+
+    
 unittest.main()
